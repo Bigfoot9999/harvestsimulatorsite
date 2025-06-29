@@ -22,8 +22,15 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+      background-image: url("/images/harvestsimHDlogo.jpg");
+    background-position: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  background-size: cover;
+  background-attachment: fixed;
 }
- /*smooth scrolling*/
+
+/*smooth scrolling*/
 html {
   scroll-behavior: smooth;
 }
@@ -38,17 +45,22 @@ header {
 
 header .container {
   max-width: 800px;
-  margin: auto;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 1rem;
+  margin: auto;
 }
-
+.section {
+  background-color: #11111150;
+}
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
+#player {
+  margin: 20px;
+}
 header p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -179,8 +191,12 @@ footer a:hover {
 /*center iframe*/
 .yt-iframe {
   display: block;
-  margin: 0 auto;
   max-height: 400px;
+  /*center*/;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .play-now {
       margin: 3rem auto 2rem auto;
