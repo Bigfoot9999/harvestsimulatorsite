@@ -28,9 +28,8 @@
 
 
   <nav>
-        <h2>Harvest Simulator</h2>
-
-    <a href="../index.html">Home</a>
+    <img src="/images/harvestsimtextlogo.png" alt="Harvest Simulator Logo" class="nav-logo">
+    <a href="../index.html">Homepage</a>
   </nav>
  
 
@@ -47,7 +46,69 @@
         allowfullscreen 
         style="min-height: 480px;">
       </iframe>
+      
     </div>
+        <button id="fullscreen-btn" style="margin-top: 2.5rem;">Go Fullscreen</button>
+
+    <section style="margin-top: 2rem;">
+      <h3>Game Overview</h3>
+      <p>Harvest Simulator is a free, browser-based farming game where you can plant crops, harvest them for coins, and expand your farm. No downloads required!</p>
+    </section>
+    <!--add a section button that you can click to open the game in fullscreen-->
+
+    <script>
+      document.getElementById('fullscreen-btn').addEventListener('click', function() {
+        const gameFrame = document.querySelector('iframe');
+        if (gameFrame.requestFullscreen) {
+          gameFrame.requestFullscreen();
+        } else if (gameFrame.mozRequestFullScreen) { // Firefox
+          gameFrame.mozRequestFullScreen();
+        } else if (gameFrame.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          gameFrame.webkitRequestFullscreen();
+        } else if (gameFrame.msRequestFullscreen) { // IE/Edge
+          gameFrame.msRequestFullscreen();
+        }
+      });
+    </script>
+    <section style="margin-top: 2rem;">
+      <h3>Game Controls</h3>
+      <ul>
+        <li>Click to plant seeds and harvest crops.</li>
+        <li>Use the shop to buy upgrades and new land.</li>
+        <li>Automate tasks with upgrades to earn coins passively.</li>
+      </ul>
+    </section>
+    <section style="margin-top: 2rem;">
+      <h3>Game Features</h3>
+      <ul>
+        <li>🌱 Real-time crop planting, growth, and harvesting</li>
+        <li>🛠️ Unlock tool upgrades to harvest faster</li>
+        <li>🌍 Expand your farm with new land and crops</li>
+        <li>🏆 Complete challenges for extra rewards</li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h3>Game Tips</h3>
+      <ul>
+        <li>Upgrade your tools early to harvest faster.</li>
+        <li>Reinvest your coins into better crops and land.</li>
+        <li>Complete challenges for extra rewards.</li>
+      </ul>
+    </section>
+                  <iframe style="margin-top: 2rem;"width="560" height="315" src="https://www.youtube.com/embed/-mcl3cTpkdw?si=BRuM0aGt-paAJFSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="yt-iframe"></iframe>
+
+    <section style="margin-top: 2rem;">
+      <h3>Game Reviews</h3>
+      <p>⭐️⭐️⭐️⭐️⭐️ "Addictive and fun! I love watching my farm grow!" - Emily R.</p>
+      <p>⭐️⭐️⭐️⭐️ "Great idle game, perfect for quick breaks." - Marcus D.</p>
+      <p>⭐️⭐️⭐️⭐️ "Better than most mobile games, runs great on my Chromebook!" - Sarah L.</p>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h3>About Harvest Simulator</h3>
+      <p>Harvest Simulator is a free, browser-based farming game where you can plant crops, harvest them for coins, and expand your farm. No downloads required!</p>
+    </section>
 
     <section style="margin-top: 2rem;">
       <h3>How to Play Harvest Simulator</h3>
